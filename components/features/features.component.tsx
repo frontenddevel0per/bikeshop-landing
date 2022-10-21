@@ -7,7 +7,7 @@ import sliderimg3 from "../../resources/img/sliderimg3.png";
 
 const Features: FC = () => {
   return (
-    <section className="features">
+    <section className="features" id="features">
       <h2>Key features</h2>
       <div className="features-slider">
         <FeaturesCard

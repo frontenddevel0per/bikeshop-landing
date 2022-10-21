@@ -1,14 +1,22 @@
 .header {
     height: 84px;
     padding: 32px;
-
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    z-index: 25;
 
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        img {
+            cursor: pointer;
+        }
 
         ul {
             display: flex;

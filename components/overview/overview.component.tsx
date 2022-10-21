@@ -8,7 +8,7 @@ import pic3 from "../../resources/img/collage-3.png";
 
 const Overview: FC = () => {
   return (
-    <section className="overview">
+    <section className="overview" id="overview">
       <div className="overview-description">
         <h2>Electric bike reimagined</h2>
         <p>
