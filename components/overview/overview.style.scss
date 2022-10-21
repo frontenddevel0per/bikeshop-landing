@@ -1,0 +1,84 @@
+.overview {
+    display: flex;
+    justify-content: space-between;
+    height: 960px;
+    padding: 160px 100px;
+    overflow: hidden;
+
+    &-description {
+        width: 412px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 68px;
+            line-height: 80px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &-order {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-top: 44px;
+
+            p {
+                margin: 0;
+            }
+
+            &-price {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &-subscription {
+                font-size: 12px;
+                line-height: 20px;
+                color: #7B7B7B;
+            }
+        }
+    }
+
+    .gallery {
+        width: 663px;
+        height: 706px;
+        gap: 23px;
+
+        & > div {
+            border-radius: 24px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+
+            & > img {
+                border-radius: 24px;
+            }
+        }
+
+        &-pic1 {
+            width: 360px;
+            height: 580px;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.072) 0%, rgba(255, 255, 255, 0) 100%), #171717;
+        }
+
+        &-pic2 {
+            width: 280px;
+            height: 360px;
+            position: relative;
+            top: -520px;
+            left: 380px;
+        }
+
+        &-pic3 {
+            width: 280px;
+            height: 356px;
+            z-index: 5;
+            position: relative;
+            top: -655px;
+            left: 230px;
+        }
+    }
+}
