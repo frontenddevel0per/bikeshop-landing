@@ -1,0 +1,20 @@
+.features {
+    padding: 0px 100px 160px;
+    overflow: hidden;
+
+    h2 {
+        font-weight: 500;
+        font-size: 68px;
+        line-height: 80px;
+    }
+
+    &-slider {
+        overflow: auto;
+        display: flex;
+        gap: 24px;
+        padding-bottom: 82px;
+
+        scrollbar-color: rgba(23, 23, 23, 0.1) #171717;;
+        scrollbar-width: thin;
+    }
+}

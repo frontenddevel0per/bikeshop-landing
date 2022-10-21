@@ -19,25 +19,33 @@ const Overview: FC = () => {
         </p>
         <div className="overview-description-order">
           <OrderButton size="medium" theme="dark" />
-          <div className="overview-order-discount">
-            <p className="header-order-discount__price">
+          <div className="overview-description-order-discount">
+            <p className="overview-description-order-discount__price">
               From €2,190 <s>€2,190</s>
             </p>
-            <p className="header-order-discount__subscription">
+            <p className="overview-description-order-discount__subscription">
               Discounts available
             </p>
           </div>
         </div>
       </div>
       <div className="gallery">
-        <div className="gallery-pic1">
+        <div className="gallery-item pic1">
           <Image src={pic1} alt="collage-1" width={424} height={580} />
         </div>
-        <div className="gallery-pic2">
+        <div className="gallery-item pic2">
           <Image src={pic2} alt="collage-2" width={554} height={360} />
         </div>
-        <div className="gallery-pic3">
+        <div className="gallery-item pic3">
           <Image src={pic3} alt="collage-3" width={543} height={360} />
+        </div>
+        <div className="gallery-sign">
+          <div className="gallery-sign-icon">
+            <div className="gallery-sign-icon__line"></div>
+            <i className="gallery-sign-icon__dot"></i>
+            <i className="gallery-sign-icon__circle"></i>
+          </div>
+          <p>Wireless charging</p>
         </div>
       </div>
     </section>

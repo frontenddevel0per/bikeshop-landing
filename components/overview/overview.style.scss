@@ -25,19 +25,20 @@
             gap: 25px;
             margin-top: 44px;
 
-            p {
-                margin: 0;
-            }
+            &-discount {
+                p {
+                    margin: 0;
+                    line-height: 20px;
 
-            &-price {
-                font-size: 14px;
-                line-height: 20px;
-            }
+                    &:first-child {
+                        font-size: 14px;
+                    }
 
-            &-subscription {
-                font-size: 12px;
-                line-height: 20px;
-                color: #7B7B7B;
+                    &:last-child {
+                        font-size: 12px;
+                        color: #7B7B7B;
+                    }
+                }
             }
         }
     }
@@ -47,7 +48,7 @@
         height: 706px;
         gap: 23px;
 
-        & > div {
+        &-item {
             border-radius: 24px;
             overflow: hidden;
             display: flex;
@@ -58,13 +59,13 @@
             }
         }
 
-        &-pic1 {
+        .pic1 {
             width: 360px;
             height: 580px;
             background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.072) 0%, rgba(255, 255, 255, 0) 100%), #171717;
         }
 
-        &-pic2 {
+        .pic2 {
             width: 280px;
             height: 360px;
             position: relative;
@@ -72,13 +73,73 @@
             left: 380px;
         }
 
-        &-pic3 {
+        .pic3 {
             width: 280px;
             height: 356px;
             z-index: 5;
             position: relative;
             top: -655px;
             left: 230px;
+        }
+
+        &-sign {
+            width: 247px;
+            height: 76px;
+            background: linear-gradient(258.17deg, rgba(255, 255, 255, 0.086) -4.72%, rgba(255, 255, 255, 0) 113.59%), rgba(23, 23, 23, 0.2);
+            backdrop-filter: blur(6px);
+            border-radius: 100px;
+            position: relative;
+            left: 125px;
+            top: -1170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+
+            &-icon {
+                width: 50px;
+                height: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                align-items: center;
+                position: relative;
+                top: -55px;
+
+                &__line {
+                    width: 2px;
+                    height: 116px;
+                    overflow: auto;
+                    background: #FFF;
+                    // border-top-left-radius: 50%;
+                    // border-top-right-radius: 50%;
+                }
+
+                &__dot {
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 100%;
+                    background: #FFF;
+                    position: absolute;
+                    top: 0px;
+                }
+
+                &__circle {
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 100%;
+                    border: 2px solid white;
+                    position: absolute;
+                    bottom: -20px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFF;
+                margin: 0;
+            }
         }
     }
 }
