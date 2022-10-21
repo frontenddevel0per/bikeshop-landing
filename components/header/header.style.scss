@@ -1,0 +1,52 @@
+.header {
+    height: 84px;
+    padding: 32px;
+
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+
+            li {
+                list-style-type: none;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-order {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &-discount {
+            p {
+                margin: 0;
+            }
+
+            &__price {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &__subscription {
+                font-size: 12px;
+                line-height: 16px;
+                text-align: right;
+
+                color: #7B7B7B;
+            }
+        }
+    }
+}
