@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Header from "../components/header/header.component";
+import Overview from "../components/overview/overview.component";
 import Showcase from "../components/showcase/showcase.component";
 
 const Home: NextPage = () => {
@@ -7,6 +8,7 @@ const Home: NextPage = () => {
     <div className="wrapper">
       <Header />
       <Showcase />
+      <Overview />
     </div>
   );
 };
