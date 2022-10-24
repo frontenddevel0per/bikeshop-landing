@@ -1,0 +1,48 @@
+{
+  "keyspecs": [
+    {
+      "name": "Price",
+      "value": "€2,190"
+    },
+    {
+      "name": "Colors",
+      "value": "Black, Khaki, Sand"
+    },
+    {
+      "name": "Rider’s height",
+      "value": "Optimized for riders between 170-195 cm tall"
+    },
+    {
+      "name": "Weight",
+      "value": "18.9 kg total weight, including battery"
+    },
+    {
+      "name": "Battery range",
+      "value": "Up to 70 km autonomy"
+    },
+    {
+      "name": "Charging time",
+      "value": "100% recharched in 3.5 hours"
+    },
+    {
+      "name": "Assist Speed",
+      "value": "25 km/h"
+    },
+    {
+      "name": "Included in box",
+      "value": "3mm, 4 mm, 5mm, and 6mm, Allen keys, belt spanner (Spa 1), Front and Rear STVZO lights, 4x Spoke reflectors, rear reflector, mount, bell."
+    },
+    {
+      "name": "Warranty",
+      "value": "2 years"
+    },
+    {
+      "name": "Control mode",
+      "value": "Connected phone with app + battery unlock"
+    },
+    {
+      "name": "Wireless phone charging",
+      "value": "Up to 15W"
+    }
+  ]
+}

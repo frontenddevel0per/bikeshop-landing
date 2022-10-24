@@ -70,7 +70,19 @@ const Header: FC = () => {
               Reviews
             </Scroll>
           </li>
-          <li>Tech specs</li>
+          <li>
+            <Scroll
+              to="tech-specs"
+              smooth
+              duration={(scrollDistanceInPx) =>
+                scrollDurationCalc(scrollDistanceInPx)
+              }
+              delay={DELAY}
+              offset={OFFSET}
+            >
+              Tech specs
+            </Scroll>
+          </li>
         </ul>
       </nav>
       <div className="header-order">
