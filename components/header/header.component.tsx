@@ -1,6 +1,8 @@
 import { FC } from "react";
 import Image from "next/image";
 import { Link as Scroll, animateScroll } from "react-scroll";
+import { scrollDurationCalc } from "./header.helpers";
+import { DELAY, OFFSET } from "./header.constants";
 
 import logo from "../../resources/img/logo.png";
 import OrderButton from "../order-button/order-button.component";
@@ -18,7 +20,14 @@ const Header: FC = () => {
         />
         <ul>
           <li>
-            <Scroll to="overview" smooth duration={500} delay={150}>
+            <Scroll
+              to="overview"
+              smooth
+              duration={(scrollDistanceInPx) =>
+                scrollDurationCalc(scrollDistanceInPx)
+              }
+              delay={DELAY}
+            >
               Overview
             </Scroll>
           </li>
@@ -26,15 +35,41 @@ const Header: FC = () => {
             <Scroll
               to="features"
               smooth
-              duration={500}
-              delay={150}
-              offset={-30}
+              duration={(scrollDistanceInPx) =>
+                scrollDurationCalc(scrollDistanceInPx)
+              }
+              delay={DELAY}
+              offset={OFFSET}
             >
               Key features
             </Scroll>
           </li>
-          <li>Ride awake</li>
-          <li>Reviews</li>
+          <li>
+            <Scroll
+              to="app-section"
+              smooth
+              duration={(scrollDistanceInPx) =>
+                scrollDurationCalc(scrollDistanceInPx)
+              }
+              delay={DELAY}
+              offset={OFFSET}
+            >
+              Ride awake
+            </Scroll>
+          </li>
+          <li>
+            <Scroll
+              to="reviews"
+              smooth
+              duration={(scrollDistanceInPx) =>
+                scrollDurationCalc(scrollDistanceInPx)
+              }
+              delay={DELAY}
+              offset={OFFSET}
+            >
+              Reviews
+            </Scroll>
+          </li>
           <li>Tech specs</li>
         </ul>
       </nav>

@@ -1,0 +1,34 @@
+.reviews {
+    padding: 0px 100px 200px;
+
+    h2 {
+        margin-bottom: 100px;
+    }
+
+    &-review {
+        width: 700px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 44px;
+
+        &-header {
+            display: flex;
+            gap: 30px;
+
+            p {
+                margin: 0;
+                font-size: 20px;
+                line-height: 32px;
+            }
+        }
+
+        &-reviewers {
+            display: flex;
+            gap: 24px;
+            margin: 0 auto;
+        }
+    }
+}

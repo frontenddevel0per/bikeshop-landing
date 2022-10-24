@@ -10,7 +10,7 @@ const Overview: FC = () => {
   return (
     <section className="overview" id="overview">
       <div className="overview-description">
-        <h2>Electric bike reimagined</h2>
+        <h2 className="section-title">Electric bike reimagined</h2>
         <p>
           A simple push of the pedal, and intuition gains new meaning as the
           motor’s torque senses your force and the speed you need. The carbon

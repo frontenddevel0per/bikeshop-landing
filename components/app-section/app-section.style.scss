@@ -1,0 +1,78 @@
+.app {
+    padding: 0px 100px 180px;
+
+    h2 {
+        margin-bottom: 36px;
+    }
+
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+
+        p {
+            width: 580px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    &-slider {
+        height: 642px;
+        position: relative;
+
+        &__image {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 24px;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        &-description {
+            width: 100%;
+            position: absolute;
+            bottom: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 40px;
+
+            &-text {
+                width: 290px;
+                color: #FFF;
+
+                h4 {
+                    font-size: 28px;
+                    line-height: 36px;
+                    font-weight: 400;
+                    margin: 0;
+                }
+    
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+            &-icons {
+                display: flex;
+                gap: 12px;
+            }
+        }
+
+        &-switches {
+            width: fit-content;
+            display: flex;
+            gap: 12px;
+            padding-top: 40px;
+            margin: 0 auto;
+        }
+    }
+}
