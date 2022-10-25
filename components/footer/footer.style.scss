@@ -1,0 +1,38 @@
+.footer {
+    height: 84px;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-language {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &-icon img {
+            border-radius: 100%;
+        }
+    }
+
+    &-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

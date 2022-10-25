@@ -7,6 +7,7 @@ import Showcase from "../components/showcase/showcase.component";
 import Reviews from "../components/reviews/reviews.component";
 import TechSpecs from "../components/tech-specs/tech-specs.component";
 import OptionSection from "../components/option-section/option-section.component";
+import Footer from "../components/footer/footer.component";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <Reviews />
       <TechSpecs />
       <OptionSection />
+      <Footer />
     </div>
   );
 };
