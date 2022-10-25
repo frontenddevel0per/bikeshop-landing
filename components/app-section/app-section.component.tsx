@@ -30,7 +30,18 @@ const AppSection: FC = () => {
       </div>
       <div className="app-slider">
         <div className="app-slider__image">
-          <Image src={sliderimg1} alt="sliderimg1" width={1920} height={1320} />
+          <Image
+            src={
+              activeSwitch === 1
+                ? sliderimg1
+                : activeSwitch === 2
+                ? sliderimg2
+                : sliderimg3
+            }
+            alt="sliderimg1"
+            width={1920}
+            height={1320}
+          />
         </div>
         <div className="app-slider-description">
           <div className="app-slider-description-text">

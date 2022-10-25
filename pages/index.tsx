@@ -6,6 +6,7 @@ import Overview from "../components/overview/overview.component";
 import Showcase from "../components/showcase/showcase.component";
 import Reviews from "../components/reviews/reviews.component";
 import TechSpecs from "../components/tech-specs/tech-specs.component";
+import OptionSection from "../components/option-section/option-section.component";
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <AppSection />
       <Reviews />
       <TechSpecs />
+      <OptionSection />
     </div>
   );
 };
