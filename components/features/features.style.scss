@@ -8,11 +8,15 @@
 
     &-slider {
         overflow: auto;
-        display: flex;
-        gap: 24px;
+        
         padding-bottom: 82px;
 
-        scrollbar-color: rgba(23, 23, 23, 0.1) #171717;;
+        &-cards {
+            display: flex;
+            gap: 24px;
+        }
+
+        scrollbar-color: #1717172d #171717;
         scrollbar-width: thin;
     }
 }
